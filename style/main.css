@@ -1,0 +1,51 @@
+@import url("components/header.css");
+@import url("components/footer.css");
+@import url("components/button.css");
+
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Nunito:regular,700,600,900);
+
+/*Pages*/
+@import url("pages/homePage.css");
+
+:root{
+    --main: "Nunito";
+    --accent: "Lato";
+
+    --main-color: #000;
+    --actions-color: #FF0000;
+    --cream: #fff8eb;
+    --orange: #FFA900;
+    --gray: #6B6B6B;
+    --light-green: #CCE0A0;
+    --brown: #774631;
+
+    --border-radius: 31px;
+}
+
+body{
+    font-family: var(--main);
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+[class*=__container]{
+    max-width: 1310px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.menu__body{
+    display: flex;
+    align-items: center;
+}
+
+.menu-body__link{
+    transition: all .5s ease 0s;
+}
+
+.title{
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+}

@@ -1,0 +1,63 @@
+button {
+    transition: all .5s ease 0s;
+}
+
+.aсtions__button {
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+    color: #fff;
+    font-size: 16px;
+    column-gap: 12px;
+
+    border-radius: var(--border-radius);
+}
+
+.button_red {
+    background-color: var(--actions-color);
+}
+
+.actions__icon {
+    display: block;
+
+    position: relative;
+
+    padding: 0;
+    border: 1px solid #e1e1e1;
+    border-radius: 16px;
+
+    width: 50px;
+    height: 48px;
+}
+
+.actions__icon img{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+.assortment__button{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    font-size: 22px;
+
+    padding: 9px 21px;
+    background-color: #fff8eb;
+    border-radius: 16px;
+
+    color: #DA9000;
+    border: 1px solid #ffe7b9;
+}
+
+.assortment__button::after{
+    content: url('../../images/all.svg');
+    display: inline-block;
+}
+
+git config user.name my-name
+git config user.email my-email

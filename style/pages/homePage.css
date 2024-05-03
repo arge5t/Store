@@ -1,0 +1,97 @@
+.assortment__header {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    margin-bottom: 45px;
+}
+
+.assortment__body {
+    display: block;
+    margin-bottom: 170px;
+}
+
+.assortment__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px 22px;
+
+}
+
+.assortment-item {
+    height: 100%;
+    position: relative;
+}
+
+.assortment-item__box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    border-radius: var(--border-radius);
+
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.assortment-item__title {
+    display: inline-block;
+    flex: 1 1 auto;
+    font-weight: 600;
+    font-size: 30px;
+    transition: all .5s ease 0s;
+}
+
+.assortment-item__title::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.assortment-item__title:hover {
+    color: var(--orange) !important;
+}
+
+.assortment-item__box img {
+    max-width: 200px;
+    align-self: flex-end;
+}
+
+.supermarket .assortment-item__box {
+    background-color: #F7FFE5;
+    border: 1px solid #CCE0A0;
+}
+
+.supermarket .assortment-item__title {
+    color: #383c5c;
+}
+
+.cooking .assortment-item__box {
+    background-color: #FFF8EB;
+    border: 1px solid #ffe7b9;
+}
+
+.cooking .assortment-item__title {
+    color: var(--brown);
+}
+
+.freeze .assortment-item__box {
+    background: #ebedff;
+    border: 1px solid #c0c5f2;
+}
+
+.freeze .assortment-item__title {
+    color: #383C5C;
+}
+
+.other .assortment-item__box {
+    background: #EBF8FF;
+    border: 1px solid #a3d0d6;
+}
+
+.other .assortment-item__title {
+    color: #274447;
+}
